@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+@extends('templates.base')
 
-    CIAO
+@section('title', 'HomePage')
 
-</body>
-</html>
+@section('content')
+    <ul>
+        <li>prodotto1</li>
+        <li>prodotto2</li>
+        <li>prodotto3</li>
+        <li>prodotto4</li>
+    </ul>
+@endsection

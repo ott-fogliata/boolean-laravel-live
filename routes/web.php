@@ -14,15 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+})->name('homepage');
+
+Route::get('/product', function () {
+    return view('product');
 });
 
 
-Route::get('/about-me', function () {
-    return view('about-me',
-        [
-            'name' => 'Pluto',
-            'srcLogo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/480px-Google_%22G%22_Logo.svg.png'
-        ]
-    );
-});
