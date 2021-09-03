@@ -14,11 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $pasta = config('pasta');
+    return view('home', [
+        'pasta' => $pasta
+    ]);
 })->name('homepage');
 
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/product/{id}', function ($id) {
+
+    // aggiorno l'id con un valore posizionale
+    $arrayIndex = $id - 1;
+
+    $pasta = config('pasta');
+
+    return view('product', [
+        "arrayIndex" => $arrayIndex,
+        'pasta' => $pasta
+    ]);
+})->name('product');
+
+
 
 

@@ -9,4 +9,37 @@ header {
 
     }
 
+    nav {
+
+        ul {
+
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+
+
+            li {
+                padding: 10px 5px;
+
+                // quando lui stesso ha la classe active (utilizzo la &)
+                &.active {
+                    background: blue;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #333;
+                }
+
+            }
+
+        }
+
+    }
+
 }

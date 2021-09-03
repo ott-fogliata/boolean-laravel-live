@@ -10,16 +10,18 @@
 </head>
 <body>
 
-    <header>
-        @include('templates.header')
-    </header>
+    <div class="container-fluid">
+        <header>
+            @include('templates.header')
+        </header>
 
-        <div class="container">
-            @yield('content')
-        </div>
+        <main>
+            @yield('main')
+        </main>
 
-    <footer>
-        @include('templates.footer')
-    </footer>
+        <footer>
+            @include('templates.footer')
+        </footer>
+    </div>
 </body>
 </html>

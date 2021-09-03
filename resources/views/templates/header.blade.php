@@ -3,8 +3,9 @@
 </div>
 <nav>
     <ul>
-        <li><a href="{{ route('homepage') }}">Home</a></li>
-        <li><a href="">Prodotti</a></li>
+        <li class="{{ Request::route()->getName() === 'homepage' ? 'active' : '' }}" >
+            <a href="{{ route('homepage') }}">
+            Prodotti</a></li>
         <li><a href="">News</a></li>
     </ul>
 </nav>

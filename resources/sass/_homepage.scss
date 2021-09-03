@@ -1,0 +1,29 @@
+.home-page-content {
+
+    background: url("/images/fondo-pag-speciali.jpg");
+    background-size: cover;
+    
+    .pasta-item {
+        margin-top: 15px;
+
+        &-content {
+            background: #eee;
+            margin: 0 5px;
+            text-align: center;
+            padding: 15px;
+            height: 200px; // questo è brutto.
+
+            img {
+                width: 100%;
+                max-width: 180px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+        }
+
+    }
+
+}

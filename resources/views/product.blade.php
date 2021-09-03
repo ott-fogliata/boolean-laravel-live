@@ -2,6 +2,6 @@
 
 @section('title', 'Product')
 
-@section('content')
-    Qui metterò il dettaglio dei miei prodotti
+@section('main')
+    @dump($pasta[$arrayIndex])
 @endsection
